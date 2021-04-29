@@ -7,10 +7,10 @@ import java.util.concurrent.ExecutorService;
 
 public class AsyncWorker {
 
-	private static final int NUMBER_OF_THREADS = 4;
+    private static final int NUMBER_OF_THREADS = 4;
     private static final AsyncWorker instance = new AsyncWorker();
     
-	protected Handler handler;
+    protected Handler handler;
     private ExecutorService executorService;
     
     private AsyncWorker() {
@@ -29,4 +29,5 @@ public class AsyncWorker {
     public Handler getHandler() {
         return handler;
     }
+	
 }
